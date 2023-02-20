@@ -14,7 +14,7 @@ if choice == "encode":
             ENCODED = ENCODED + ' '
         else:
             X = LETTERS.index(letter) + SHIFT
-            ENCODED=ENCODED + LETTERS[X]
+            ENCODED = ENCODED + LETTERS[X]
 if choice == "decode":
     for letter in word:
         if letter == ' ':
