@@ -13,11 +13,11 @@ if choice == "encode":
             x = letters.index(letter) + shift
             encoded=encoded + letters[x]
 if choice == "decode":
-  for letter in word:
-      if letter == ' ':
-          encoded = encoded + ' '
-      else:
-          x = letters.index(letter) - shift
-          encoded = encoded + letters[x]
+    for letter in word:
+        if letter == ' ':
+            encoded = encoded + ' '
+        else:
+            x = letters.index(letter) - shift
+            encoded = encoded + letters[x]
 
 print(encoded)
