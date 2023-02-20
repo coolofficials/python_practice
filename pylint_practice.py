@@ -1,3 +1,6 @@
+"""
+pylint test.
+"""
 import string
 
 shift = 3
