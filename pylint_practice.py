@@ -3,24 +3,24 @@ pylint test.
 """
 import string
 
-shift = 3
+SHIFT = 3
 choice = input("would you like to encode or decode?")
 word = input("Please enter text")
-letters = string.ascii_letters + string.punctuation + string.digits
-encoded = ''
+LETTERS = string.ascii_letters + string.punctuation + string.digits
+ENCODED = ''
 if choice == "encode":
     for letter in word:
         if letter == ' ':
-            encoded = encoded + ' '
+            ENCODED = ENCODED + ' '
         else:
-            x = letters.index(letter) + shift
-            encoded=encoded + letters[x]
+            X = LETTERS.index(letter) + SHIFT
+            ENCODED=ENCODED + LETTERS[X]
 if choice == "decode":
     for letter in word:
         if letter == ' ':
-            encoded = encoded + ' '
+            ENCODED = ENCODED + ' '
         else:
-            x = letters.index(letter) - shift
-            encoded = encoded + letters[x]
+            X = LETTERS.index(letter) - SHIFT
+            ENCODED = ENCODED + LETTERS[X]
 
-print(encoded)
+print(ENCODED)
